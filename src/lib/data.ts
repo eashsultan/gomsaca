@@ -99,6 +99,16 @@ export const aboutData = {
 export const leadership = [
   {
     id: 1,
+    name: "Dr. Muhammad Sunusi Ahamad",
+    title: "Chief Executive Director",
+    role: "Chief Executive Director",
+    image: "/CEO.jpg",
+    message:
+      "I am deeply committed to strengthening Gombe State's HIV/AIDS response through strategic coordination, community engagement, and accessible healthcare services. Together with our partners, we are building a future where every citizen has access to quality prevention, treatment, and care.",
+    linkedin: "#",
+  },
+  {
+    id: 2,
     name: "Dr. Amina Suleiman Mohammed",
     title: "Executive Director",
     role: "Executive Director",
@@ -108,7 +118,7 @@ export const leadership = [
     linkedin: "#",
   },
   {
-    id: 2,
+    id: 3,
     name: "Dr. Ibrahim Usman Garkuwa",
     title: "Director of Public Health",
     role: "Director",
@@ -118,7 +128,7 @@ export const leadership = [
     linkedin: "#",
   },
   {
-    id: 3,
+    id: 4,
     name: "Hajiya Fatima Bello Abubakar",
     title: "Director of Programs",
     role: "Director",
@@ -128,7 +138,7 @@ export const leadership = [
     linkedin: "#",
   },
   {
-    id: 4,
+    id: 5,
     name: "Mr. Daniel Yakubu Markus",
     title: "Director of Finance & Administration",
     role: "Director",
@@ -614,21 +624,21 @@ export const publications = [
 ]
 
 export const partners = [
-  { name: "PEPFAR", category: "International" },
-  { name: "U.S. CDC", category: "International" },
-  { name: "WHO Nigeria", category: "UN Agency" },
-  { name: "UNAIDS", category: "UN Agency" },
-  { name: "UNICEF Nigeria", category: "UN Agency" },
-  { name: "Federal Ministry of Health", category: "Government" },
-  { name: "NACA", category: "Government" },
-  { name: "Gombe State Ministry of Health", category: "Government" },
-  { name: "Global Fund", category: "Development" },
-  { name: "USAID Nigeria", category: "Development" },
-  { name: "Clinton Health Access Initiative", category: "NGO" },
-  { name: "APIN Public Health Initiatives", category: "NGO" },
-  { name: "Institute of Human Virology Nigeria", category: "NGO" },
-  { name: "CARE International", category: "NGO" },
-  { name: "Red Cross Nigeria", category: "NGO" },
+  { name: "PEPFAR", category: "International", logo: "/logos/pepfar.png" },
+  { name: "U.S. CDC", category: "International", logo: "/logos/us-cdc.png" },
+  { name: "WHO Nigeria", category: "UN Agency", logo: "/logos/who.png" },
+  { name: "UNAIDS", category: "UN Agency", logo: "/logos/unaids.png" },
+  { name: "UNICEF Nigeria", category: "UN Agency", logo: "/logos/unicef.png" },
+  { name: "Federal Ministry of Health", category: "Government", logo: "/logos/fmoh.png" },
+  { name: "NACA", category: "Government", logo: "/logos/naca.png" },
+  { name: "Gombe State Ministry of Health", category: "Government", logo: "/logos/gombe-moh.png" },
+  { name: "Global Fund", category: "Development", logo: "/logos/global-fund.png" },
+  { name: "USAID Nigeria", category: "Development", logo: "/logos/usaid.png" },
+  { name: "Clinton Health Access Initiative", category: "NGO", logo: "/logos/chai.png" },
+  { name: "APIN Public Health Initiatives", category: "NGO", logo: "/logos/apin.png" },
+  { name: "Institute of Human Virology Nigeria", category: "NGO", logo: "/logos/ihvn.png" },
+  { name: "CARE International", category: "NGO", logo: "/logos/care.png" },
+  { name: "Red Cross Nigeria", category: "NGO", logo: "/logos/red-cross.png" },
 ]
 
 export const galleryImages = [

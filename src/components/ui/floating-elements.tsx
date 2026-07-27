@@ -36,15 +36,22 @@ export function FloatingOrbs() {
   )
 }
 
+function seeded(seed: number) {
+  return Math.sin(seed * 10000) * 0.5 + 0.5
+}
+
 export function FloatingParticles({ count = 6 }: { count?: number }) {
-  const particles = Array.from({ length: count }, (_, i) => ({
-    id: i,
-    x: Math.random() * 100,
-    y: Math.random() * 100,
-    size: Math.random() * 6 + 2,
-    duration: Math.random() * 6 + 4,
-    delay: Math.random() * 3,
-  }))
+  const particles = Array.from({ length: count }, (_, i) => {
+    const s = i + 1
+    return {
+      id: i,
+      x: Number((seeded(s * 7) * 100).toFixed(5)),
+      y: Number((seeded(s * 13) * 100).toFixed(5)),
+      size: Number((seeded(s * 17) * 6 + 2).toFixed(5)),
+      duration: seeded(s * 19) * 6 + 4,
+      delay: seeded(s * 23) * 3,
+    }
+  })
 
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden>

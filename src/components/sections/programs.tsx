@@ -2,85 +2,107 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { Shield, Microscope, HeartPulse, Users, GraduationCap, BarChart3, Megaphone, ArrowRight } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { SectionHeader } from "@/components/ui/section-header"
+import { Shield, Microscope, HeartPulse, Users, GraduationCap, BarChart3, Megaphone, ArrowRight, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { TiltCard } from "@/components/ui/tilt-card"
-import { StaggerGrid, StaggerItem } from "@/components/ui/animated-section"
-import { FloatingParticles } from "@/components/ui/floating-elements"
 import { programs } from "@/lib/data"
 
 const iconMap: Record<string, React.ElementType> = {
   Shield, Microscope, HeartPulse, Users, GraduationCap, BarChart3, Megaphone,
 }
 
-const images = ["/A doctor is checking a patient_.jpeg", "/MEDICAL OUTREACH & HIV_AIDS AWARENESS, SOUTH… (1).jpeg", "/999165867338083734.jpeg", "/8444318045568594.jpeg", "/A doctor is checking a patient_.jpeg", "/MEDICAL OUTREACH & HIV_AIDS AWARENESS, SOUTH… (1).jpeg"]
-
-const colorMap: Record<string, { bg: string; text: string; hover: string }> = {
-  green: { bg: "bg-[var(--primary-bg)]", text: "text-[var(--primary)]", hover: "group-hover:bg-[var(--primary)] group-hover:text-white" },
-  gold: { bg: "bg-amber-50", text: "text-[var(--accent)]", hover: "group-hover:bg-[var(--accent)] group-hover:text-white" },
-}
+const images = [
+  "/MEDICAL OUTREACH & HIV_AIDS AWARENESS, SOUTH… (1).jpeg",
+  "/999165867338083734.jpeg",
+  "/A doctor is checking a patient_.jpeg",
+  "/8444318045568594.jpeg",
+  "/Could Lessons From The Early Fight Against AIDS Inform The Coronavirus Response_.jpeg",
+  "/Apple\u2019s (RED) work raises $270m to fight AIDS,_.jpeg",
+]
 
 export function Programs() {
   return (
-    <section id="programs" className="py-20 lg:py-28 bg-[var(--gray-bg)] relative overflow-hidden">
-      <FloatingParticles count={5} />
+    <section id="programs" className="py-20 lg:py-28 hero-gradient relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-[var(--primary)]/5 rounded-full blur-3xl" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(11,110,58,0.08),transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(232,245,233,0.15),transparent_50%)]" />
+        <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-[var(--primary)]/5 blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-[var(--primary-bg)]/80 blur-3xl" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <SectionHeader
-          label="Our Programs"
-          title="What Our Agency Offers"
-          description="HIV prevention is not a one-size-fits-all approach. Tailoring strategies to the specific needs and risk factors of different populations is essential."
-        />
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+          className="max-w-3xl mx-auto text-center mb-14 lg:mb-16"
+        >
+          <motion.span
+            initial={{ opacity: 0, y: -10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full bg-gradient-to-r from-[var(--primary)] to-[var(--primary-light)] text-white text-xs font-bold uppercase tracking-[0.15em] mb-6 shadow-lg shadow-[var(--primary)]/20"
+          >
+            <Sparkles className="w-3.5 h-3.5" />
+            Our Programs
+          </motion.span>
+          <h2 className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-[1.05] tracking-tight mb-4">
+            <span className="text-[var(--primary)]">What Our</span>{" "}
+            <span className="text-[var(--dark-text)]">Agency Offers</span>
+          </h2>
+          <p className="text-lg text-[var(--body-text)] leading-relaxed max-w-2xl mx-auto">
+            HIV prevention is not a one-size-fits-all approach. Tailoring strategies to the specific needs and risk factors of different populations is essential.
+          </p>
+        </motion.div>
 
-        <StaggerGrid className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {programs.map((program, i) => {
             const Icon = iconMap[program.icon]
-            const colors = colorMap[program.color]
             return (
-              <StaggerItem key={program.id}>
-                <TiltCard maxTilt={4} scale={1.01}>
-                  <div className="group rounded-2xl bg-white border border-[var(--border)] overflow-hidden hover:shadow-xl transition-all duration-500 h-full flex flex-col">
-                    <div className="relative h-48 overflow-hidden">
-                      <Image
-                        src={images[i]}
-                        alt={program.title}
-                        fill
-                        className="object-cover transition-transform duration-700 group-hover:scale-110"
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-                      <div className="absolute inset-0 ring-1 ring-inset ring-black/5" />
-                    </div>
-                    <div className="p-6 flex flex-col flex-1">
-                      {Icon && (
-                        <div className={cn("w-11 h-11 rounded-xl flex items-center justify-center mb-4 transition-all duration-300", colors.bg, colors.hover)}>
-                          <Icon className={cn("w-5.5 h-5.5 transition-colors duration-300", colors.text, "group-hover:text-white")} />
-                        </div>
-                      )}
-                      <h3 className="text-lg font-bold text-[var(--dark-text)] mb-3 leading-snug">{program.title}</h3>
-                      <p className="text-sm text-[var(--body-text)] leading-relaxed flex-1">{program.description}</p>
-                      <a
-                        href={program.link}
-                        className={cn(
-                          "inline-flex items-center gap-1.5 mt-4 font-semibold text-sm transition-all duration-300 group/link",
-                          colors.text,
-                        )}
-                      >
-                        Learn more
-                        <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover/link:translate-x-1" />
-                      </a>
+              <motion.div
+                key={program.id}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.5, delay: i * 0.08 }}
+              >
+                <div className="group bg-white rounded-2xl border border-[var(--border)] overflow-hidden hover:shadow-xl hover:shadow-[var(--primary)]/5 hover:border-[var(--primary)]/20 transition-all duration-500 h-full flex flex-col">
+                  <div className="relative h-52 overflow-hidden">
+                    <Image
+                      src={images[i]}
+                      alt={program.title}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/90 backdrop-blur-sm text-xs font-bold text-[var(--primary)] shadow-sm">
+                        {program.title}
+                      </span>
                     </div>
                   </div>
-                </TiltCard>
-              </StaggerItem>
+                  <div className="p-6 flex flex-col flex-1">
+                    {Icon && (
+                      <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[var(--primary-bg)] to-[var(--primary)]/10 flex items-center justify-center mb-4 group-hover:from-[var(--primary)]/10 group-hover:to-[var(--primary-bg)] transition-all duration-300">
+                        <Icon className="w-6 h-6 text-[var(--primary)]" />
+                      </div>
+                    )}
+                    <p className="text-sm text-[var(--body-text)] leading-relaxed flex-1">{program.description}</p>
+                    <a
+                      href={program.link}
+                      className="inline-flex items-center gap-1.5 mt-5 font-semibold text-sm text-[var(--primary)] hover:text-[var(--primary-dark)] transition-colors group/link"
+                    >
+                      Learn more
+                      <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover/link:translate-x-1" />
+                    </a>
+                  </div>
+                </div>
+              </motion.div>
             )
           })}
-        </StaggerGrid>
+        </div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

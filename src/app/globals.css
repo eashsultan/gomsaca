@@ -12,6 +12,9 @@
   --accent: #C9A227;
   --accent-light: #E8C547;
   --accent-glow: rgba(201, 162, 39, 0.2);
+  --warm: #D4A728;
+  --warm-light: #E8C547;
+  --warm-glow: rgba(212, 167, 40, 0.18);
   --white: #FFFFFF;
   --gray-bg: #F8FAFC;
   --gray-light: #F1F5F9;
@@ -98,14 +101,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, var(--primary), var(--primary-lighter));
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .text-gradient-accent {
-  background: linear-gradient(135deg, var(--accent), #D4A843);
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -120,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-gradient {
-  background: linear-gradient(135deg, var(--gray-bg) 0%, var(--white) 50%, var(--gray-bg) 100%);
+  background: linear-gradient(160deg, var(--primary-bg) 0%, var(--white) 30%, var(--white) 70%, var(--primary-bg) 100%);
 }
 
 .card-hover {
