@@ -21,10 +21,41 @@ export const aboutData = {
   whoWeAre:
     "Gombe State Agency for the Control of AIDS was first established as Gombe State Action Committee on AIDS in the year 2002. Later it was transformed into an agency saddled with the responsibility of identifying and controlling the spread of HIV. GOMSACA coordinates the multi-sectoral response to HIV/AIDS in Gombe State, working collaboratively with government ministries, development partners, civil society organizations, and community stakeholders to achieve an AIDS-free generation in Gombe State.",
   mission:
-    "To coordinate and implement a comprehensive, evidence-based, and community-centered HIV/AIDS response that ensures prevention, treatment, care, and support services reach every citizen of Gombe State.",
+    "PREVENT NEW INFECTIONS AND IMPROVE THE HEALTH STATUS OF PEOPLE LIVING WITH HIV/AIDS THROUGH CO-ORDINATION OF STAKEHOLDERS",
   vision:
-    "A Gombe State where new HIV infections are eliminated, people living with HIV have access to quality care and treatment, and stigma and discrimination are eradicated.",
-  history: "Gombe State Agency for the Control of AIDS was first established as Gombe State Action Committee on AIDS in the year 2002. Later it was transformed into an agency saddled with the responsibility of identifying and controlling the spread of HIV.",
+    "A COORDINATED HIV RESPONSE WITH FEWER NEW INFECTIONS AND HEALTHIER PEOPLE LIVING WITH HIV/AIDS AND PEOPLE AFFECTED BY AIDS",
+  history: "Gombe State Agency for the Control of AIDS was first established as Gombe State Action Committee on AIDS in the year 2002. Later it was transformed into an agency. The agency started receiving World Bank assistance in the year 2006 through HIV Program Development Project (HPDP). Subsequently, 11 LACA were formed to help the SACA achieve its goal. So also technical staff, junior staff such as drivers, cleaners, and securities were employed. Other management staff were posted from various ministries.",
+  projectManager: {
+    name: "Alh. Hassan Mohammed Dawaki",
+    title: "Magajin Rafin Dukku",
+    role: "Project Manager, GOMSACA",
+  },
+  pmMessage: {
+    heading: "From the Project Manager",
+    message: "I am honored and deeply committed to addressing one of the most pressing public health challenges of our time as the Project Manager of the Gombe State Agency for the Control of HIV/AIDS. Today, I want to share a message of hope, resilience, and unwavering dedication to our mission of HIV prevention and control. HIV/AIDS continues to affect countless lives worldwide, and its impact goes beyond the individuals living with the virus. It affects families, communities, and societies as a whole. But let us be clear: we are not defined by this virus; we are defined by our collective response to it. Our agency's mission is clear: to prevent new HIV infections and improve the quality of life for those living with HIV in Gombe State.",
+    principles: [
+      {
+        title: "Empowering Education and Awareness",
+        description: "Knowledge is the foundation of prevention. We will empower individuals with accurate, up-to-date information about HIV/AIDS. We will strive to combat stigma and discrimination, ensuring that every person affected by HIV in Gombe State feels valued and supported.",
+      },
+      {
+        title: "Accessible and Inclusive Services",
+        description: "We are committed to providing equitable access to comprehensive HIV prevention, testing, treatment, and care services in Gombe State. No one should be left behind in our efforts, and we will work tirelessly to remove barriers that prevent access to essential healthcare.",
+      },
+      {
+        title: "Community Partnership",
+        description: "HIV prevention is a collaborative endeavor. We will strengthen our bonds with community organizations, healthcare providers, advocacy groups, and governmental agencies within Gombe State. Together, we can achieve more than we ever could alone.",
+      },
+      {
+        title: "Innovation and Research",
+        description: "The fight against HIV/AIDS demands continuous innovation. We will invest in research, exploring new strategies, technologies, and treatments tailored to the unique needs of Gombe State. By embracing the latest advancements, we can adapt and refine our approach to better serve our community.",
+      },
+      {
+        title: "Compassion and Support",
+        description: "We recognize the importance of empathy and support for individuals living with HIV in Gombe State. We are here to provide a safe and compassionate environment, where everyone feels heard, respected, and cared for.",
+      },
+    ],
+  },
   mandate: [
     {
       title: "Policy Coordination",
@@ -289,56 +320,56 @@ export const blogPosts = [
   {
     id: 1,
     category: "Activities",
-    title: "Activities",
+    title: "GOMSACA ACTIVITIES AND COMMUNITY OUTREACH PROGRAM",
     author: "Ayuba Bala",
     date: "2026-07-11",
-    excerpt: "Latest activities and updates from GOMSACA.",
-    image: "/community.jpg",
+    excerpt: "Latest activities and community outreach programs conducted by GOMSACA across Gombe State.",
+    image: "/MEDICAL OUTREACH & HIV_AIDS AWARENESS, SOUTH… (1).jpeg",
   },
   {
     id: 2,
+    category: "Activities",
+    title: "INTERVIEW WITH THE NURSE ABIBA YAKUBU FROM NIGERIAN CORRECTIONAL CENTRE GOMBE DURING A TRAINING SESSION ON INTEGRATION OF KEY POPULATION AND GENERAL POPULATION SERVICE.",
+    author: "Ayuba Bala",
+    date: "2026-06-24",
+    excerpt: "An interview with Nurse Abiba Yakubu from Nigerian Correctional Centre Gombe during a training session on integration of key population and general population service.",
+    image: "/A doctor is checking a patient_.jpeg",
+  },
+  {
+    id: 3,
+    category: "Activities",
+    title: "INTERVIEW WITH THE DR. ALI ABDULKADIR FROM FEDERAL TEACHING HOSPITAL GOMBE DURING A TRAINING SESSION ON INTEGRATION OF KEY POPULATION AND GENERAL POPULATION SERVICE.",
+    author: "Ayuba Bala",
+    date: "2026-06-24",
+    excerpt: "An interview with Dr. Ali Abdulkadir from Federal Teaching Hospital Gombe during a training session on integration of key population and general population service.",
+    image: "/8444318045568594.jpeg",
+  },
+  {
+    id: 4,
     category: "Activities",
     title: "COURTESY VISIT BY STAFF OF GOMSACA TO THE MINISTRY FOR LOCAL GOVERNMENT AND CHIEFTAINCY AFFAIRS",
     author: "Ayuba Bala",
     date: "2025-02-10",
     excerpt: "Staff of GOMSACA paid a courtesy visit to the Ministry for Local Government and Chieftaincy Affairs.",
-    image: "/gombe.jpg",
+    image: "/999165867338083734.jpeg",
   },
   {
-    id: 3,
-    category: "Activities",
-    title: "INTERVIEW WITH THE NURSE ABIBA YAKUBU FROM NIGERIAN CORRECTIONAL CENTRE GOMBE",
-    author: "Ayuba Bala",
-    date: "2026-06-24",
-    excerpt: "An interview with Nurse Abiba Yakubu from Nigerian Correctional Centre Gombe during a training session on integration of key population and general population service.",
-    image: "/facility.jpg",
-  },
-  {
-    id: 4,
+    id: 5,
     category: "Activities",
     title: "WORLD AIDS DAY BRIEF REPORT",
     author: "Ayuba Bala",
     date: "2025-02-10",
     excerpt: "World AIDS Day brief report from GOMSACA.",
-    image: "/community.jpg",
-  },
-  {
-    id: 5,
-    category: "Activities",
-    title: "INTERVIEW WITH THE DR. ALI ABDULKADIR FROM FEDERAL TEACHING HOSPITAL GOMBE",
-    author: "Ayuba Bala",
-    date: "2026-06-24",
-    excerpt: "An interview with Dr. Ali Abdulkadir from Federal Teaching Hospital Gombe during a training session on integration of key population and general population service.",
-    image: "/market.jpg",
+    image: "/Apple’s (RED) work raises $270m to fight AIDS,_.jpeg",
   },
   {
     id: 6,
     category: "Activities",
-    title: "GOMSACA COURTESY TO MINISTRY FOR LOCAL GOVERNMENT",
+    title: "GOMSACA COURTESY TO MINISTRY FOR LOCAL GOVERNMENT.",
     author: "Ayuba Bala",
     date: "2025-02-08",
     excerpt: "GOMSACA paid a courtesy visit to the Ministry for Local Government.",
-    image: "/gombe.jpg",
+    image: "/Could Lessons From The Early Fight Against AIDS Inform The Coronavirus Response_.jpeg",
   },
 ]
 
@@ -362,7 +393,7 @@ export const news = [
     excerpt:
       "The Gombe State Agency for the Control of AIDS has launched an ambitious community-based HIV testing campaign targeting over 50,000 residents across all 11 Local Government Areas, with mobile testing units and confidential counseling services.",
     date: "2024-03-15",
-    image: "/community.jpg",
+    image: "/MEDICAL OUTREACH & HIV_AIDS AWARENESS, SOUTH… (1).jpeg",
     featured: true,
   },
   {
@@ -372,7 +403,7 @@ export const news = [
     excerpt:
       "A landmark partnership between GOMSACA and PEPFAR will provide $8.2 million in technical and financial support to strengthen HIV prevention, treatment, and care services across Gombe State.",
     date: "2024-02-28",
-    image: "/gombe.jpg",
+    image: "/999165867338083734.jpeg",
     featured: false,
   },
   {
@@ -382,7 +413,7 @@ export const news = [
     excerpt:
       "A state-of-the-art Antiretroviral Therapy center has been commissioned in Gombe Township, featuring modern laboratory equipment, pharmacy services, and confidential counseling rooms serving over 5,000 patients.",
     date: "2024-02-10",
-    image: "/facility.jpg",
+    image: "/A doctor is checking a patient_.jpeg",
     featured: false,
   },
   {
@@ -392,7 +423,7 @@ export const news = [
     excerpt:
       "GOMSACA has successfully trained 350 community health workers and peer educators on HIV prevention strategies, stigma reduction, and community mobilization techniques to expand grassroots outreach.",
     date: "2024-01-20",
-    image: "/community.jpg",
+    image: "/MEDICAL OUTREACH & HIV_AIDS AWARENESS, SOUTH… (1).jpeg",
     featured: false,
   },
 ]
@@ -402,7 +433,7 @@ export const testimonials = [
     id: 1,
     name: "Aisha Mohammed",
     role: "HIV Prevention Advocate, Akko LGA",
-    image: "/community.jpg",
+    image: "/MEDICAL OUTREACH & HIV_AIDS AWARENESS, SOUTH… (1).jpeg",
     quote:
       "When I discovered my HIV status, I thought my life was over. GOMSACA's counselors gave me hope, connected me to treatment, and trained me as a peer educator. Today, I help others in my community live positively and without fear.",
   },
@@ -410,7 +441,7 @@ export const testimonials = [
     id: 2,
     name: "Musa Abdullahi",
     role: "Community Leader, Dukku LGA",
-    image: "/community.jpg",
+    image: "/MEDICAL OUTREACH & HIV_AIDS AWARENESS, SOUTH… (1).jpeg",
     quote:
       "The stigma around HIV in our community was overwhelming. GOMSACA's awareness campaigns changed everything. Now people openly discuss prevention, get tested, and support those living with HIV. Our community is stronger because of this work.",
   },
@@ -418,7 +449,7 @@ export const testimonials = [
     id: 3,
     name: "Sarah John",
     role: "Youth Ambassador, Gombe LGA",
-    image: "/market.jpg",
+    image: "/8444318045568594.jpeg",
     quote:
       "As a young person, I never thought HIV affected me until GOMSACA came to our school. Their youth program educated me and empowered me to speak to my peers. I now lead a youth HIV awareness group reaching over 2,000 young people.",
   },
@@ -426,7 +457,7 @@ export const testimonials = [
     id: 4,
     name: "Hajiya Zainab Abubakar",
     role: "PMTCT Beneficiary, Kaltungo LGA",
-    image: "/community.jpg",
+    image: "/MEDICAL OUTREACH & HIV_AIDS AWARENESS, SOUTH… (1).jpeg",
     quote:
       "Thanks to GOMSACA's prevention of mother-to-child transmission program, I gave birth to an HIV-negative baby. The counseling, medication, and support I received throughout my pregnancy was exceptional. My child is healthy and thriving.",
   },
@@ -438,7 +469,7 @@ export const successStories = [
     name: "From Stigma to Advocacy — Aisha's Story",
     summary:
       "After her HIV diagnosis, Aisha Mohammed faced stigma from her community. Today, she is one of Gombe State's most effective HIV prevention advocates, reaching thousands with her message of hope.",
-    image: "/community.jpg",
+    image: "/MEDICAL OUTREACH & HIV_AIDS AWARENESS, SOUTH… (1).jpeg",
     outcome: "Trained 500+ peer educators, reached 10,000+ community members",
   },
   {
@@ -446,7 +477,7 @@ export const successStories = [
     name: "A Community Transformed — Dukku LGA",
     summary:
       "When GOMSACA began intensive community engagement in Dukku LGA, HIV testing rates were below 15%. Through sustained awareness campaigns and mobile testing, testing rates have risen to over 65%.",
-    image: "/gombe.jpg",
+    image: "/999165867338083734.jpeg",
     outcome: "HIV testing increased by 400%, stigma reduced by 60%",
   },
   {
@@ -454,7 +485,7 @@ export const successStories = [
     name: "Giving Hope to the Next Generation",
     summary:
       "Through GOMSACA's PMTCT program, over 5,000 HIV-positive mothers have received comprehensive care, ensuring their children are born HIV-free and healthy.",
-    image: "/facility.jpg",
+    image: "/A doctor is checking a patient_.jpeg",
     outcome: "99% of babies born to HIV-positive mothers are HIV-free",
   },
 ]
@@ -540,6 +571,46 @@ export const publications = [
     format: "PDF",
     category: "Strategic Plans",
   },
+  {
+    id: 9,
+    title: "DHIS GROUP PICTURES",
+    type: "Publication",
+    date: "2024-11-07",
+    description: "District Health Information System (DHIS) quarterly review meeting group pictures.",
+    fileSize: "2.1 MB",
+    format: "JPEG",
+    category: "Publications",
+  },
+  {
+    id: 10,
+    title: "DHIS PICTURES",
+    type: "Publication",
+    date: "2024-11-07",
+    description: "District Health Information System (DHIS) quarterly review meeting pictures.",
+    fileSize: "1.8 MB",
+    format: "JPEG",
+    category: "Publications",
+  },
+  {
+    id: 11,
+    title: "DHIS PICTURE",
+    type: "Publication",
+    date: "2024-11-07",
+    description: "District Health Information System (DHIS) quarterly review meeting photography.",
+    fileSize: "1.5 MB",
+    format: "JPEG",
+    category: "Publications",
+  },
+  {
+    id: 12,
+    title: "DISTRICT HEALTH INFORMATION SYSTEM (DHIS) QUARTERLY REVIEW MEETING REPORTING AT MACOZE",
+    type: "Report",
+    date: "2024-11-07",
+    description: "District Health Information System (DHIS) quarterly review meeting reporting session held at Macoze.",
+    fileSize: "3.2 MB",
+    format: "PDF",
+    category: "Reports",
+  },
 ]
 
 export const partners = [
@@ -561,14 +632,14 @@ export const partners = [
 ]
 
 export const galleryImages = [
-  { src: "/community.jpg", alt: "HIV awareness campaign in Gombe community", category: "Awareness" },
-  { src: "/facility.jpg", alt: "HIV testing and counseling center", category: "Programs" },
-  { src: "/market.jpg", alt: "Community health outreach event", category: "Outreach" },
-  { src: "/gombe.jpg", alt: "Gombe State health summit", category: "Events" },
-  { src: "/hero-bg.jpg", alt: "Community health workers training", category: "Training" },
-  { src: "/community.jpg", alt: "Youth HIV prevention workshop", category: "Youth" },
-  { src: "/market.jpg", alt: "PMTCT awareness session", category: "Programs" },
-  { src: "/facility.jpg", alt: "ART center pharmacy services", category: "Facilities" },
+  { src: "/MEDICAL OUTREACH & HIV_AIDS AWARENESS, SOUTH… (1).jpeg", alt: "HIV awareness campaign in Gombe community", category: "Awareness" },
+  { src: "/A doctor is checking a patient_.jpeg", alt: "HIV testing and counseling center", category: "Programs" },
+  { src: "/8444318045568594.jpeg", alt: "Community health outreach event", category: "Outreach" },
+  { src: "/999165867338083734.jpeg", alt: "Gombe State health summit", category: "Events" },
+  { src: "/Apple’s (RED) work raises $270m to fight AIDS,_.jpeg", alt: "Community health workers training", category: "Training" },
+  { src: "/MEDICAL OUTREACH & HIV_AIDS AWARENESS, SOUTH… (1).jpeg", alt: "Youth HIV prevention workshop", category: "Youth" },
+  { src: "/8444318045568594.jpeg", alt: "PMTCT awareness session", category: "Programs" },
+  { src: "/A doctor is checking a patient_.jpeg", alt: "ART center pharmacy services", category: "Facilities" },
 ]
 
 export const programsNav = [

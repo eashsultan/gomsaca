@@ -3,13 +3,13 @@ import { forwardRef } from "react"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 rounded-full font-medium transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--primary)] disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--primary)] disabled:pointer-events-none disabled:opacity-50 active:scale-[0.97]",
   {
     variants: {
       variant: {
-        primary: "bg-[var(--primary)] text-white hover:bg-[var(--primary-dark)] shadow-md hover:shadow-lg",
-        secondary: "border-2 border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white",
-        gold: "bg-[var(--accent)] text-white hover:bg-[var(--accent-light)] shadow-md hover:shadow-lg",
+        primary: "bg-[var(--primary)] text-white hover:bg-[var(--primary-dark)] shadow-md hover:shadow-lg hover:shadow-[var(--primary-glow)]",
+        secondary: "border-2 border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white hover:shadow-lg hover:shadow-[var(--primary-glow)]",
+        gold: "bg-[var(--accent)] text-white hover:bg-[var(--accent-light)] shadow-md hover:shadow-lg hover:shadow-[var(--accent-glow)]",
         ghost: "text-[var(--dark-text)] hover:bg-zinc-100",
       },
       size: {
