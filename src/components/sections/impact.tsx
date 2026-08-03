@@ -17,7 +17,7 @@ const iconMap: Record<string, React.ElementType> = {
   Building2, Baby, MapPin, Stethoscope,
 }
 
-const chartColors = ["#1E3A5F", "#2D5A8E", "#C9A227", "#E8C547", "#0B1D3A", "#E8EFF8"]
+const chartColors = ["#0B3C6D", "#2563EB", "#E11D48", "#22C55E", "#0B3C6D", "#EAF1FB"]
 
 const lgaChartData = lgas.map((l) => ({
   name: l.name,

@@ -25,7 +25,7 @@ export function Leadership() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
-          className="bg-gradient-to-br from-[#f8faf8] to-white rounded-3xl border border-[var(--border)] overflow-hidden shadow-lg mb-16"
+          className="bg-gradient-to-br from-[var(--gray-bg)] to-white rounded-3xl border border-[var(--border)] overflow-hidden shadow-lg mb-16"
         >
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-0">
             <div className="lg:col-span-2 relative h-[400px] lg:h-full min-h-[400px]">
@@ -35,7 +35,6 @@ export function Leadership() {
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 40vw"
-                priority
               />
               <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-black/40 via-transparent to-transparent" />
             </div>

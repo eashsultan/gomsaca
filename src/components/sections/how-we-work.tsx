@@ -33,7 +33,7 @@ export function HowWeWork() {
               transition={{ duration: 0.6, delay: i * 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
               className="text-center group"
             >
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-5 shadow-lg shadow-black/5 group-hover:shadow-xl transition-shadow duration-500">
+              <div className="card-image relative aspect-[4/3] rounded-2xl overflow-hidden mb-5 shadow-lg shadow-black/5 group-hover:shadow-xl transition-shadow duration-500">
                 <Image
                   src={step.image}
                   alt={step.title}

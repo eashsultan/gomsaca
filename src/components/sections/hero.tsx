@@ -2,7 +2,8 @@
 
 import { useRef } from "react"
 import { motion, useInView, useScroll, useTransform, useSpring } from "framer-motion"
-import { Heart, Handshake, Users, Activity, MapPin, Building2, Sparkles, Shield } from "lucide-react"
+import { Heart, Handshake, Users, MapPin, Building2, CheckCircle2, type LucideIcon } from "lucide-react"
+import Image from "next/image"
 import CountUp from "react-countup"
 import { Button } from "@/components/ui/button"
 import { FloatingParticles } from "@/components/ui/floating-elements"
@@ -13,38 +14,32 @@ const floatingCards = [
     title: "Active Programs",
     value: "24",
     subtitle: "Running Projects",
-    color: "from-white to-white",
-    iconBg: "bg-[var(--primary-bg)]",
-    iconColor: "text-[var(--primary)]",
-    valueColor: "text-[var(--primary)]",
+    accent: "from-[#BE123C] to-[#F43F5E]",
+    chip: "#F43F5E",
   },
   {
     icon: Handshake,
     title: "Strategic Partners",
     value: "20+",
     subtitle: "Organizations",
-    color: "from-white to-white",
-    iconBg: "bg-[var(--primary-bg)]",
-    iconColor: "text-[var(--primary)]",
-    valueColor: "text-[var(--primary)]",
+    accent: "from-[#0B3C6D] to-[#2563EB]",
+    chip: "#2563EB",
   },
   {
     icon: Users,
     title: "Community Impact",
     value: "114K+",
     subtitle: "Beneficiaries",
-    color: "from-white to-white",
-    iconBg: "bg-[var(--primary-bg)]",
-    iconColor: "text-[var(--primary)]",
-    valueColor: "text-[var(--primary)]",
+    accent: "from-[#15803D] to-[#22C55E]",
+    chip: "#16A34A",
   },
 ]
 
 const stats = [
-  { value: 114000, suffix: "+", label: "Individuals Reached", icon: Users },
-  { value: 50000, suffix: "+", label: "HIV Tests Conducted", icon: Activity },
-  { value: 11, suffix: "", label: "LGAs Covered", icon: MapPin },
-  { value: 20, suffix: "+", label: "Development Partners", icon: Building2 },
+  { value: 284000, suffix: "+", label: "People Reached", icon: Users },
+  { value: 486, suffix: "+", label: "Communities Covered", icon: MapPin },
+  { value: 124, suffix: "+", label: "Health Facilities", icon: Building2 },
+  { value: 22, suffix: "+", label: "Development Partners", icon: Handshake },
 ]
 
 const partners = [
@@ -55,8 +50,8 @@ const partners = [
   { name: "UNAIDS" },
 ]
 
-function FloatingCard({ icon: Icon, title, value, subtitle, color, iconBg, iconColor, valueColor, index }: {
-  icon: any; title: string; value: string; subtitle: string; color: string; iconBg: string; iconColor: string; valueColor: string; index: number
+function FloatingCard({ icon: Icon, title, value, subtitle, accent, chip, index }: {
+  icon: LucideIcon; title: string; value: string; subtitle: string; accent: string; chip: string; index: number
 }) {
   return (
     <motion.div
@@ -65,7 +60,7 @@ function FloatingCard({ icon: Icon, title, value, subtitle, color, iconBg, iconC
       transition={{ duration: 0.6, delay: 0.8 + index * 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
       className="absolute hidden lg:block"
       style={{
-        top: `${[12, 38, 64][index]}%`,
+        top: `${[10, 36, 62][index]}%`,
         right: `${[0, -15, 0][index]}%`,
         left: index === 2 ? "auto" : `${index === 1 ? "auto" : ""}`,
       }}
@@ -73,16 +68,19 @@ function FloatingCard({ icon: Icon, title, value, subtitle, color, iconBg, iconC
       <motion.div
         animate={{ y: [0, -6, 0] }}
         transition={{ duration: 4 + index, repeat: Infinity, ease: "easeInOut", delay: index * 1.2 }}
-        className="bg-white/95 backdrop-blur-xl rounded-2xl shadow-xl shadow-[var(--primary)]/15 border border-[var(--primary)]/20 p-4 w-48"
+        className="relative rounded-2xl p-[1.5px] bg-gradient-to-br from-white/90 via-white/60 to-white/30 shadow-2xl shadow-[var(--primary)]/15"
       >
-        <div className="flex items-center gap-3 mb-3">
-          <div className={`w-9 h-9 rounded-xl ${iconBg} flex items-center justify-center shadow-sm`}>
-            <Icon className={`w-4.5 h-4.5 ${iconColor}`} />
+        <div className="rounded-[calc(1rem-1.5px)] bg-white/95 backdrop-blur-xl p-4 w-48">
+          <div className="flex items-center gap-3 mb-3">
+            <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${accent} flex items-center justify-center shadow-lg shadow-black/10`}>
+              <Icon className="w-5 h-5 text-white" />
+            </div>
+            <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">{title}</span>
           </div>
-          <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">{title}</span>
+          <div className="text-2xl font-extrabold text-[var(--dark-text)] tracking-tight">{value}</div>
+          <div className="text-xs text-gray-400 mt-0.5 font-medium">{subtitle}</div>
+          <div className="absolute top-3 right-3 w-2 h-2 rounded-full" style={{ background: chip, boxShadow: `0 0 10px ${chip}` }} />
         </div>
-        <div className={`text-2xl font-extrabold ${valueColor} tracking-tight`}>{value}</div>
-        <div className="text-xs text-gray-400 mt-0.5 font-medium">{subtitle}</div>
       </motion.div>
     </motion.div>
   )
@@ -98,43 +96,45 @@ function StatsBar() {
         initial={{ opacity: 0, y: 30 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
-        className="bg-white backdrop-blur-xl rounded-3xl shadow-2xl shadow-[var(--primary)]/10 border border-[var(--primary)]/20 p-10 lg:p-12"
+        className="relative rounded-[2rem] p-[2px] bg-gradient-to-br from-[var(--primary)]/40 via-[var(--warm)]/25 to-[var(--primary-light)]/40 shadow-2xl shadow-[var(--primary)]/10"
       >
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
-          {stats.map((stat, i) => {
-            const Icon = stat.icon
-            return (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, y: 24 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: i * 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
-                className="text-center relative"
-              >
-                <div className="relative inline-flex mb-4">
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[var(--primary-bg)] to-[var(--primary)]/15 flex items-center justify-center shadow-sm">
-                    <Icon className="w-7 h-7 text-[var(--primary)]" />
+        <div className="rounded-[calc(2rem-2px)] bg-white/95 backdrop-blur-xl p-8 lg:p-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-10">
+            {stats.map((stat, i) => {
+              const Icon = stat.icon
+              return (
+                <motion.div
+                  key={stat.label}
+                  initial={{ opacity: 0, y: 24 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.6, delay: i * 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
+                  className="text-center relative"
+                >
+                  <div className="relative inline-flex mb-4">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[var(--primary)] to-[var(--primary-light)] flex items-center justify-center shadow-lg shadow-[var(--primary)]/20">
+                      <Icon className="w-7 h-7 text-white" />
+                    </div>
+                    <motion.div
+                      animate={isInView ? { scale: [1, 1.3, 1] } : {}}
+                      transition={{ duration: 0.5, delay: 1.5 + i * 0.2 }}
+                      className="absolute -top-1 -right-1 w-3 h-3 rounded-full bg-[var(--warm)] border-2 border-white"
+                    />
                   </div>
-                  <motion.div
-                    animate={isInView ? { scale: [1, 1.3, 1] } : {}}
-                    transition={{ duration: 0.5, delay: 1.5 + i * 0.2 }}
-                    className="absolute -top-1 -right-1 w-3 h-3 rounded-full bg-[var(--primary-light)] border-2 border-white"
-                  />
-                </div>
-                <div className="text-3xl lg:text-4xl font-extrabold text-[var(--dark-text)] tracking-tight">
-                  {isInView ? (
-                    <>
-                      <CountUp end={stat.value} duration={2.5} />
-                      {stat.suffix}
-                    </>
-                  ) : (
-                    "0"
-                  )}
-                </div>
-                <div className="text-sm text-gray-500 mt-1.5 font-medium">{stat.label}</div>
-              </motion.div>
-            )
-          })}
+                  <div className="text-3xl lg:text-4xl font-extrabold text-[var(--dark-text)] tracking-tight">
+                    {isInView ? (
+                      <>
+                        <CountUp end={stat.value} duration={2.5} />
+                        {stat.suffix}
+                      </>
+                    ) : (
+                      "0"
+                    )}
+                  </div>
+                  <div className="text-sm text-gray-500 mt-1.5 font-medium">{stat.label}</div>
+                </motion.div>
+              )
+            })}
+          </div>
         </div>
       </motion.div>
     </div>
@@ -147,19 +147,18 @@ export function Hero() {
     target: sectionRef,
     offset: ["start start", "end start"],
   })
-  const bgY = useSpring(useTransform(scrollYProgress, [0, 1], [0, 150]), { stiffness: 40, damping: 30 })
 
   return (
     <section ref={sectionRef} className="relative min-h-screen hero-gradient overflow-hidden">
       <FloatingParticles count={15} />
 
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(11,110,58,0.15),transparent_60%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(11,110,58,0.1),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(232,245,233,0.2),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(11,60,109,0.15),transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(11,60,109,0.1),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(234,241,251,0.2),transparent_50%)]" />
       </div>
 
-      <motion.div style={{ y: bgY }} className="absolute inset-0 pointer-events-none">
+      <motion.div style={{ y: useSpring(useTransform(scrollYProgress, [0, 1], [0, 150]), { stiffness: 40, damping: 30 }) }} className="absolute inset-0 pointer-events-none">
         <motion.div
           animate={{ rotate: [0, 15, 0], scale: [1, 1.1, 1] }}
           transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
@@ -194,9 +193,13 @@ export function Hero() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
-              className="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-[var(--primary)] to-[var(--primary-light)] text-white text-sm font-semibold rounded-full shadow-lg shadow-[var(--primary-glow)] mb-6"
+              className="inline-flex items-center gap-2.5 px-5 py-2 bg-gradient-to-r from-[var(--primary)] to-[var(--primary-lighter)] text-white text-sm font-semibold rounded-full shadow-lg shadow-[var(--primary-glow)] mb-6"
             >
-              <Sparkles className="w-3.5 h-3.5 text-white" />
+              <svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor" aria-hidden="true">
+                <path d="M12 2.7l1.1 2.6 2.8.2 2.1 1.8 2.4 1.4-.8 2.7 1 2.7-2.2 1.7-.5 2.8-2.3 1.7-2.1-1.9-2.9-.1L8.3 22l-2-1.9-2.2-1.5-.5-2.8-2.8-1.4.8-2.7-1-2.7 2.6-1.3 2-1.8 2.8-.2L12 2.7z" />
+                <path d="M12 6.5v11" stroke="#fff" strokeWidth="1.4" fill="none" strokeLinecap="round" opacity=".85" />
+                <path d="M8.5 19.5c1.1-.7 1.7-1.1 3.5-1.1s2.4.4 3.5 1.1" stroke="#fff" strokeWidth="1.2" fill="none" strokeLinecap="round" opacity=".85" />
+              </svg>
               Gombe State Agency for the Control of AIDS
             </motion.span>
 
@@ -208,7 +211,7 @@ export function Hero() {
             >
               Leading the Fight Against{" "}
               <span className="text-gradient relative">
-                HIV<span className="text-[var(--primary)]">/AIDS</span>
+                HIV<span className="text-[var(--accent)]">/AIDS</span>
                 <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 8" fill="none">
                   <motion.path
                     initial={{ pathLength: 0 }}
@@ -221,8 +224,8 @@ export function Hero() {
                   />
                   <defs>
                     <linearGradient id="line-gradient" x1="0" y1="0" x2="1" y2="0">
-                      <stop offset="0%" stopColor="#0B6E3A" />
-                      <stop offset="100%" stopColor="#D4A728" />
+                      <stop offset="0%" stopColor="#0B3C6D" />
+                      <stop offset="100%" stopColor="#E11D48" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -236,7 +239,7 @@ export function Hero() {
               transition={{ duration: 0.7, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
               className="text-base lg:text-lg leading-relaxed mb-8 max-w-xl"
             >
-              <span className="font-semibold text-[var(--primary)]">GOMSACA</span> <span className="text-[var(--body-text)]">coordinates prevention, treatment, care, advocacy and community interventions to improve health outcomes across Gombe State.</span>
+              <span className="text-[var(--body-text)]">GOMSACA is the state agency responsible for coordinating HIV/AIDS prevention, partnerships, community interventions, monitoring, advocacy, and support programmes.</span>
             </motion.p>
 
             <motion.div
@@ -254,8 +257,22 @@ export function Hero() {
                 Explore Programs
               </Button>
               <Button variant="secondary" size="lg">
-                View Reports
+                Latest News
               </Button>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.45 }}
+              className="flex flex-wrap items-center gap-x-8 gap-y-3 mt-8"
+            >
+              {["Certified facilities", "Confidential testing", "Stigma-free care"].map((item) => (
+                <span key={item} className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--body-text)]">
+                  <CheckCircle2 className="w-4 h-4 text-[var(--warm)]" />
+                  {item}
+                </span>
+              ))}
             </motion.div>
           </div>
 
@@ -266,21 +283,31 @@ export function Hero() {
               transition={{ duration: 0.9, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
               className="relative"
             >
-            <motion.div
-              animate={{ rotate: [0, 4, 0], scale: [1, 1.02, 1] }}
-              transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -inset-4 bg-gradient-to-br from-[var(--primary)]/25 via-[var(--primary-bg)]/60 to-[var(--primary)]/15 rounded-[40px] blur-2xl"
-            />
+              <motion.div
+                animate={{ rotate: [0, 4, 0], scale: [1, 1.02, 1] }}
+                transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute -inset-4 bg-gradient-to-br from-[var(--primary)]/25 via-[var(--primary-bg)]/60 to-[var(--primary)]/15 rounded-[40px] blur-2xl"
+              />
 
-              <div className="relative rounded-[32px] overflow-hidden shadow-2xl shadow-[var(--primary)]/20 border-2 border-[var(--primary)]/30">
-                <img
-                  src="/hero.jpeg"
-                  alt="Healthcare workers engaging with community"
-                  className="w-full h-[500px] lg:h-[600px] object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-transparent to-black/10" />
-                <div className="absolute inset-0 ring-1 ring-inset ring-white/20 rounded-[32px]" />
+              <div className="relative rounded-[32px] p-[2px] bg-gradient-to-br from-[var(--primary)]/50 via-[var(--warm)]/30 to-[var(--primary-light)]/50 shadow-2xl shadow-[var(--primary)]/20">
+                <div className="relative rounded-[30px] overflow-hidden h-[500px] lg:h-[600px]">
+                  <Image
+                    src="/hero.jpeg"
+                    alt="Healthcare workers engaging with community"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 55vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-transparent to-black/10" />
+                  <div className="absolute top-5 left-5">
+                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 backdrop-blur-md text-white text-xs font-bold uppercase tracking-wider shadow-lg border border-white/20">
+                      <Heart className="w-3.5 h-3.5 text-[var(--warm-light)]" />
+                      Committed to an AIDS-Free Gombe
+                    </span>
+                  </div>
+                  <div className="absolute inset-0 ring-1 ring-inset ring-white/20 rounded-[30px]" />
+                </div>
               </div>
 
               {floatingCards.map((card, i) => (
@@ -301,7 +328,7 @@ export function Hero() {
         className="bg-gradient-to-r from-[var(--primary-darker)] via-[var(--primary-dark)] to-[var(--primary)] mt-16 py-14 relative overflow-hidden"
       >
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.08),transparent_60%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(11,110,58,0.2),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(11,60,109,0.2),transparent_50%)]" />
         <div className="absolute inset-0 shimmer opacity-20" />
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">

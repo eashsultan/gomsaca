@@ -1,4 +1,5 @@
 export { Hero } from "./hero"
+export { QuickActions } from "./quick-actions"
 export { About } from "./about"
 export { Programs } from "./programs"
 export { QuoteSection } from "./quote-section"

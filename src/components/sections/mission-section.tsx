@@ -26,7 +26,7 @@ export function MissionSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
-            className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full bg-gradient-to-r from-[var(--accent)] to-amber-400 text-white text-xs font-bold uppercase tracking-[0.15em] mb-6 shadow-lg shadow-black/20"
+            className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full bg-gradient-to-r from-[var(--accent)] to-[var(--accent-light)] text-white text-xs font-bold uppercase tracking-[0.15em] mb-6 shadow-lg shadow-black/20"
           >
             <Sparkles className="w-3.5 h-3.5" />
             {missionStatement.headline}
@@ -49,7 +49,7 @@ export function MissionSection() {
               {missionStatement.description}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[var(--accent)] to-amber-400 text-white font-bold shadow-lg shadow-black/20">
+              <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[var(--accent)] to-[var(--accent-light)] text-white font-bold shadow-lg shadow-black/20">
                 <Heart className="w-4 h-4" />
                 Together we can end AIDS
               </span>

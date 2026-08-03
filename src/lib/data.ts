@@ -5,8 +5,8 @@ export const siteConfig = {
   description:
     "Gombe State Agency for the Control of Aids is an agency saddled with the responsibility of identifying and controlling the spread of HIV.",
   email: "info@gomsaca.org.ng",
-  phone: "+234 624 4622",
-  phoneDisplay: "(234) - 624 - 4622",
+  phone: "+234 903 661 3416",
+  phoneDisplay: "+234 903 661 3416",
   address: "Tashan Dukku Road, Opp Miyetti Hospital Gombe, Gombe State",
 }
 
@@ -108,43 +108,43 @@ export const leadership = [
     linkedin: "#",
   },
   {
-    id: 2,
-    name: "Dr. Amina Suleiman Mohammed",
-    title: "Executive Director",
-    role: "Executive Director",
-    image: "/md.jpg",
+    id: 6,
+    name: "Dahiru Adamu",
+    title: "Director, Prevention & Behavioural Change",
+    role: "Director",
+    image: "/dahiru-adamu.jpg",
     message:
-      "Our vision is clear — an AIDS-free Gombe State where every citizen has access to quality prevention, treatment, care, and support services. We are committed to leaving no one behind in our response to HIV/AIDS.",
+      "Leading the charge on prevention and behavioural change, we work to reduce new HIV infections through community-driven awareness and engagement.",
     linkedin: "#",
   },
   {
-    id: 3,
-    name: "Dr. Ibrahim Usman Garkuwa",
-    title: "Director of Public Health",
+    id: 7,
+    name: "Pharm. Muhammad Suraj",
+    title: "Director, Diagnostic, Treatment and Support",
     role: "Director",
-    image: "/chairman.jpg",
+    image: "/pharm-muhammad-suraj.jpg",
     message:
-      "Through evidence-based interventions and strategic partnerships, we are strengthening Gombe State's health systems to deliver comprehensive HIV services that reach the most vulnerable populations.",
+      "Committed to strengthening access to quality diagnostic, treatment, and support services for people living with HIV across Gombe State.",
     linkedin: "#",
   },
   {
-    id: 4,
-    name: "Hajiya Fatima Bello Abubakar",
-    title: "Director of Programs",
+    id: 8,
+    name: "Yusuf Bello Matawalle",
+    title: "Director, Administration and Finance",
     role: "Director",
-    image: "/chairman.jpg",
+    image: "/Yusuf Bello matawalle Administration and finance.jpg",
     message:
-      "Our programs are designed with communities at the center. From prevention to treatment, every intervention reflects our unwavering commitment to the health and dignity of every Gombe State resident.",
+      "Ensuring transparent and accountable management of resources to effectively drive Gombe State's HIV/AIDS response.",
     linkedin: "#",
   },
   {
-    id: 5,
-    name: "Mr. Daniel Yakubu Markus",
-    title: "Director of Finance & Administration",
+    id: 9,
+    name: "Umar Isiyaku",
+    title: "Director, Planning, Research and Monitoring and Evaluation",
     role: "Director",
-    image: "/chairman.jpg",
+    image: "/umar-isiyaku.jpg",
     message:
-      "Transparency and accountability are the bedrock of our operations. We ensure that every resource entrusted to us is deployed effectively to achieve maximum impact in our HIV/AIDS response.",
+      "Driving evidence-based planning, research, and monitoring to continuously improve the impact of our HIV/AIDS programs.",
     linkedin: "#",
   },
 ]
@@ -216,12 +216,12 @@ export const impactData = [
 ]
 
 export const impactStats = [
-  { label: "Individuals on ART", value: 82500, suffix: "+", icon: "HeartPulse", color: "#1E3A5F" },
-  { label: "HIV Tests Conducted (2024)", value: 195000, suffix: "+", icon: "Microscope", color: "#C9A227" },
-  { label: "Health Facilities", value: 124, suffix: "", icon: "Building2", color: "#1E3A5F" },
-  { label: "PMTCT Coverage", value: 89, suffix: "%", icon: "Baby", color: "#C9A227" },
-  { label: "Communities Reached", value: 486, suffix: "+", icon: "MapPin", color: "#1E3A5F" },
-  { label: "Trained Health Workers", value: 2400, suffix: "+", icon: "Stethoscope", color: "#C9A227" },
+  { label: "Individuals on ART", value: 82500, suffix: "+", icon: "HeartPulse", color: "#0B3C6D" },
+  { label: "HIV Tests Conducted (2024)", value: 195000, suffix: "+", icon: "Microscope", color: "#22C55E" },
+  { label: "Health Facilities", value: 124, suffix: "", icon: "Building2", color: "#2563EB" },
+  { label: "PMTCT Coverage", value: 89, suffix: "%", icon: "Baby", color: "#E11D48" },
+  { label: "Communities Reached", value: 486, suffix: "+", icon: "MapPin", color: "#0B3C6D" },
+  { label: "Trained Health Workers", value: 2400, suffix: "+", icon: "Stethoscope", color: "#22C55E" },
 ]
 
 export const lgas = [
@@ -232,7 +232,7 @@ export const lgas = [
     facilities: 14,
     initiatives: ["HIV Testing", "Prevention", "Treatment"],
     status: "active",
-    color: "#1E3A5F",
+    color: "#0B3C6D",
   },
   {
     id: "balanga",
@@ -241,7 +241,7 @@ export const lgas = [
     facilities: 9,
     initiatives: ["Prevention", "Community Outreach"],
     status: "active",
-    color: "#1E3A5F",
+    color: "#0B3C6D",
   },
   {
     id: "billiri",
@@ -250,7 +250,7 @@ export const lgas = [
     facilities: 8,
     initiatives: ["Treatment", "Youth Engagement"],
     status: "active",
-    color: "#1E3A5F",
+    color: "#0B3C6D",
   },
   {
     id: "dukku",
@@ -259,7 +259,7 @@ export const lgas = [
     facilities: 11,
     initiatives: ["HIV Testing", "Prevention", "PMTCT"],
     status: "active",
-    color: "#1E3A5F",
+    color: "#0B3C6D",
   },
   {
     id: "funakaye",
@@ -268,7 +268,7 @@ export const lgas = [
     facilities: 7,
     initiatives: ["Prevention", "Community Outreach"],
     status: "active",
-    color: "#1E3A5F",
+    color: "#0B3C6D",
   },
   {
     id: "gombe",
@@ -277,7 +277,7 @@ export const lgas = [
     facilities: 18,
     initiatives: ["All Programs"],
     status: "active",
-    color: "#0B1D3A",
+    color: "#061f3a",
   },
   {
     id: "kaltungo",
@@ -286,7 +286,7 @@ export const lgas = [
     facilities: 8,
     initiatives: ["HIV Testing", "Treatment"],
     status: "active",
-    color: "#1E3A5F",
+    color: "#0B3C6D",
   },
   {
     id: "kwami",
@@ -295,7 +295,7 @@ export const lgas = [
     facilities: 10,
     initiatives: ["Prevention", "Youth Engagement"],
     status: "active",
-    color: "#1E3A5F",
+    color: "#0B3C6D",
   },
   {
     id: "nafada",
@@ -304,7 +304,7 @@ export const lgas = [
     facilities: 6,
     initiatives: ["HIV Testing", "Awareness"],
     status: "active",
-    color: "#1E3A5F",
+    color: "#0B3C6D",
   },
   {
     id: "shongom",
@@ -313,7 +313,7 @@ export const lgas = [
     facilities: 7,
     initiatives: ["Prevention", "Community Outreach"],
     status: "active",
-    color: "#1E3A5F",
+    color: "#0B3C6D",
   },
   {
     id: "yamaltu-deba",
@@ -322,7 +322,7 @@ export const lgas = [
     facilities: 12,
     initiatives: ["Treatment", "HIV Testing", "PMTCT"],
     status: "active",
-    color: "#1E3A5F",
+    color: "#0B3C6D",
   },
 ]
 
@@ -642,14 +642,14 @@ export const partners = [
 ]
 
 export const galleryImages = [
-  { src: "/MEDICAL OUTREACH & HIV_AIDS AWARENESS, SOUTH… (1).jpeg", alt: "HIV awareness campaign in Gombe community", category: "Awareness" },
-  { src: "/A doctor is checking a patient_.jpeg", alt: "HIV testing and counseling center", category: "Programs" },
-  { src: "/8444318045568594.jpeg", alt: "Community health outreach event", category: "Outreach" },
-  { src: "/999165867338083734.jpeg", alt: "Gombe State health summit", category: "Events" },
-  { src: "/Apple’s (RED) work raises $270m to fight AIDS,_.jpeg", alt: "Community health workers training", category: "Training" },
-  { src: "/MEDICAL OUTREACH & HIV_AIDS AWARENESS, SOUTH… (1).jpeg", alt: "Youth HIV prevention workshop", category: "Youth" },
-  { src: "/8444318045568594.jpeg", alt: "PMTCT awareness session", category: "Programs" },
-  { src: "/A doctor is checking a patient_.jpeg", alt: "ART center pharmacy services", category: "Facilities" },
+  { src: "/gallery-awareness.jpg", alt: "HIV awareness campaign in Gombe community", category: "Awareness" },
+  { src: "/gallery-testing.jpg", alt: "HIV testing and counseling center", category: "Programs" },
+  { src: "/gallery-outreach.jpg", alt: "Community health outreach event", category: "Outreach" },
+  { src: "/gallery-events.jpg", alt: "Gombe State health summit", category: "Events" },
+  { src: "/gallery-training.jpg", alt: "Community health workers training", category: "Training" },
+  { src: "/gallery-youth.jpg", alt: "Youth HIV prevention workshop", category: "Youth" },
+  { src: "/gallery-pmtct.jpg", alt: "PMTCT awareness session", category: "Programs" },
+  { src: "/gallery-pharmacy.jpg", alt: "ART center pharmacy services", category: "Facilities" },
 ]
 
 export const programsNav = [

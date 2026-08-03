@@ -2,17 +2,16 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import Image from "next/image"
 import { Sparkles } from "lucide-react"
 import { FloatingParticles } from "@/components/ui/floating-elements"
 import { partners } from "@/lib/data"
 
 const categoryColors: Record<string, { bg: string; text: string; border: string }> = {
-  Government: { bg: "bg-blue-50", text: "text-blue-700", border: "border-blue-200" },
-  Development: { bg: "bg-emerald-50", text: "text-emerald-700", border: "border-emerald-200" },
-  "UN Agency": { bg: "bg-sky-50", text: "text-sky-700", border: "border-sky-200" },
-  NGO: { bg: "bg-purple-50", text: "text-purple-700", border: "border-purple-200" },
-  International: { bg: "bg-amber-50", text: "text-amber-700", border: "border-amber-200" },
+  Government: { bg: "bg-[var(--primary-bg)]", text: "text-[var(--primary)]", border: "border-[var(--primary)]/15" },
+  Development: { bg: "bg-[var(--warm-bg)]", text: "text-[var(--warm)]", border: "border-[var(--warm)]/20" },
+  "UN Agency": { bg: "bg-[var(--primary-bg)]", text: "text-[var(--primary)]", border: "border-[var(--primary)]/15" },
+  NGO: { bg: "bg-[var(--accent-bg)]", text: "text-[var(--accent)]", border: "border-[var(--accent)]/20" },
+  International: { bg: "bg-[var(--warm-bg)]", text: "text-[var(--warm)]", border: "border-[var(--warm)]/20" },
 }
 
 function getInitials(name: string) {
@@ -95,24 +94,7 @@ export function Partners() {
                       className={`inline-flex items-center gap-3 px-5 py-3 rounded-xl border text-sm font-medium whitespace-nowrap transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 cursor-default shrink-0 ${colors.bg} ${colors.text} ${colors.border}`}
                     >
                       <span className={`w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold shrink-0 ${colors.bg} ${colors.text}`}>
-                        <Image
-                          src={partner.logo}
-                          alt={partner.name}
-                          width={32}
-                          height={32}
-                          className="w-8 h-8 object-contain rounded-lg"
-                          onError={(e) => {
-                            const target = e.currentTarget
-                            target.style.display = "none"
-                            const parent = target.parentElement
-                            if (parent) {
-                              const fallback = document.createElement("span")
-                              fallback.className = `w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold shrink-0 ${colors.bg} ${colors.text}`
-                              fallback.textContent = getInitials(partner.name)
-                              parent.appendChild(fallback)
-                            }
-                          }}
-                        />
+                        {getInitials(partner.name)}
                       </span>
                       <span className="flex flex-col">
                         <span>{partner.name}</span>
