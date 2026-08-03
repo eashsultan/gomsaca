@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: "GOMSACA",
+  name: "GomSACA",
   fullName: "Gombe State Agency for the Control of AIDS",
-  tagline: "Welcome To GOMSACA",
+  tagline: "Welcome To GomSACA",
   description:
     "Gombe State Agency for the Control of Aids is an agency saddled with the responsibility of identifying and controlling the spread of HIV.",
   email: "info@gomsaca.org.ng",
@@ -19,7 +19,7 @@ export const stats = [
 
 export const aboutData = {
   whoWeAre:
-    "Gombe State Agency for the Control of AIDS was first established as Gombe State Action Committee on AIDS in the year 2002. Later it was transformed into an agency saddled with the responsibility of identifying and controlling the spread of HIV. GOMSACA coordinates the multi-sectoral response to HIV/AIDS in Gombe State, working collaboratively with government ministries, development partners, civil society organizations, and community stakeholders to achieve an AIDS-free generation in Gombe State.",
+    "Gombe State Agency for the Control of AIDS was first established as Gombe State Action Committee on AIDS in the year 2002. Later it was transformed into an agency saddled with the responsibility of identifying and controlling the spread of HIV. GomSACA coordinates the multi-sectoral response to HIV/AIDS in Gombe State, working collaboratively with government ministries, development partners, civil society organizations, and community stakeholders to achieve an AIDS-free generation in Gombe State.",
   mission:
     "PREVENT NEW INFECTIONS AND IMPROVE THE HEALTH STATUS OF PEOPLE LIVING WITH HIV/AIDS THROUGH CO-ORDINATION OF STAKEHOLDERS",
   vision:
@@ -28,7 +28,7 @@ export const aboutData = {
   projectManager: {
     name: "Alh. Hassan Mohammed Dawaki",
     title: "Magajin Rafin Dukku",
-    role: "Project Manager, GOMSACA",
+    role: "Project Manager, GomSACA",
   },
   pmMessage: {
     heading: "From the Project Manager",
@@ -330,10 +330,10 @@ export const blogPosts = [
   {
     id: 1,
     category: "Activities",
-    title: "GOMSACA ACTIVITIES AND COMMUNITY OUTREACH PROGRAM",
+    title: "GomSACA ACTIVITIES AND COMMUNITY OUTREACH PROGRAM",
     author: "Ayuba Bala",
     date: "2026-07-11",
-    excerpt: "Latest activities and community outreach programs conducted by GOMSACA across Gombe State.",
+    excerpt: "Latest activities and community outreach programs conducted by GomSACA across Gombe State.",
     image: "/MEDICAL OUTREACH & HIV_AIDS AWARENESS, SOUTH… (1).jpeg",
   },
   {
@@ -357,10 +357,10 @@ export const blogPosts = [
   {
     id: 4,
     category: "Activities",
-    title: "COURTESY VISIT BY STAFF OF GOMSACA TO THE MINISTRY FOR LOCAL GOVERNMENT AND CHIEFTAINCY AFFAIRS",
+    title: "COURTESY VISIT BY STAFF OF GomSACA TO THE MINISTRY FOR LOCAL GOVERNMENT AND CHIEFTAINCY AFFAIRS",
     author: "Ayuba Bala",
     date: "2025-02-10",
-    excerpt: "Staff of GOMSACA paid a courtesy visit to the Ministry for Local Government and Chieftaincy Affairs.",
+    excerpt: "Staff of GomSACA paid a courtesy visit to the Ministry for Local Government and Chieftaincy Affairs.",
     image: "/999165867338083734.jpeg",
   },
   {
@@ -369,16 +369,16 @@ export const blogPosts = [
     title: "WORLD AIDS DAY BRIEF REPORT",
     author: "Ayuba Bala",
     date: "2025-02-10",
-    excerpt: "World AIDS Day brief report from GOMSACA.",
+    excerpt: "World AIDS Day brief report from GomSACA.",
     image: "/Apple’s (RED) work raises $270m to fight AIDS,_.jpeg",
   },
   {
     id: 6,
     category: "Activities",
-    title: "GOMSACA COURTESY TO MINISTRY FOR LOCAL GOVERNMENT.",
+    title: "GomSACA COURTESY TO MINISTRY FOR LOCAL GOVERNMENT.",
     author: "Ayuba Bala",
     date: "2025-02-08",
-    excerpt: "GOMSACA paid a courtesy visit to the Ministry for Local Government.",
+    excerpt: "GomSACA paid a courtesy visit to the Ministry for Local Government.",
     image: "/Could Lessons From The Early Fight Against AIDS Inform The Coronavirus Response_.jpeg",
   },
 ]
@@ -399,7 +399,7 @@ export const news = [
   {
     id: 1,
     category: "Programs",
-    title: "GOMSACA Launches Expanded HIV Testing Campaign Across All 11 LGAs",
+    title: "GomSACA Launches Expanded HIV Testing Campaign Across All 11 LGAs",
     excerpt:
       "The Gombe State Agency for the Control of AIDS has launched an ambitious community-based HIV testing campaign targeting over 50,000 residents across all 11 Local Government Areas, with mobile testing units and confidential counseling services.",
     date: "2024-03-15",
@@ -409,9 +409,9 @@ export const news = [
   {
     id: 2,
     category: "Partnership",
-    title: "GOMSACA Signs Strategic Agreement with PEPFAR to Strengthen HIV Response",
+    title: "GomSACA Signs Strategic Agreement with PEPFAR to Strengthen HIV Response",
     excerpt:
-      "A landmark partnership between GOMSACA and PEPFAR will provide $8.2 million in technical and financial support to strengthen HIV prevention, treatment, and care services across Gombe State.",
+      "A landmark partnership between GomSACA and PEPFAR will provide $8.2 million in technical and financial support to strengthen HIV prevention, treatment, and care services across Gombe State.",
     date: "2024-02-28",
     image: "/999165867338083734.jpeg",
     featured: false,
@@ -429,9 +429,9 @@ export const news = [
   {
     id: 4,
     category: "Training",
-    title: "GOMSACA Trains 350 Community Health Workers on HIV Prevention",
+    title: "GomSACA Trains 350 Community Health Workers on HIV Prevention",
     excerpt:
-      "GOMSACA has successfully trained 350 community health workers and peer educators on HIV prevention strategies, stigma reduction, and community mobilization techniques to expand grassroots outreach.",
+      "GomSACA has successfully trained 350 community health workers and peer educators on HIV prevention strategies, stigma reduction, and community mobilization techniques to expand grassroots outreach.",
     date: "2024-01-20",
     image: "/MEDICAL OUTREACH & HIV_AIDS AWARENESS, SOUTH… (1).jpeg",
     featured: false,
@@ -445,7 +445,7 @@ export const testimonials = [
     role: "HIV Prevention Advocate, Akko LGA",
     image: "/MEDICAL OUTREACH & HIV_AIDS AWARENESS, SOUTH… (1).jpeg",
     quote:
-      "When I discovered my HIV status, I thought my life was over. GOMSACA's counselors gave me hope, connected me to treatment, and trained me as a peer educator. Today, I help others in my community live positively and without fear.",
+      "When I discovered my HIV status, I thought my life was over. GomSACA's counselors gave me hope, connected me to treatment, and trained me as a peer educator. Today, I help others in my community live positively and without fear.",
   },
   {
     id: 2,
@@ -453,7 +453,7 @@ export const testimonials = [
     role: "Community Leader, Dukku LGA",
     image: "/MEDICAL OUTREACH & HIV_AIDS AWARENESS, SOUTH… (1).jpeg",
     quote:
-      "The stigma around HIV in our community was overwhelming. GOMSACA's awareness campaigns changed everything. Now people openly discuss prevention, get tested, and support those living with HIV. Our community is stronger because of this work.",
+      "The stigma around HIV in our community was overwhelming. GomSACA's awareness campaigns changed everything. Now people openly discuss prevention, get tested, and support those living with HIV. Our community is stronger because of this work.",
   },
   {
     id: 3,
@@ -461,7 +461,7 @@ export const testimonials = [
     role: "Youth Ambassador, Gombe LGA",
     image: "/8444318045568594.jpeg",
     quote:
-      "As a young person, I never thought HIV affected me until GOMSACA came to our school. Their youth program educated me and empowered me to speak to my peers. I now lead a youth HIV awareness group reaching over 2,000 young people.",
+      "As a young person, I never thought HIV affected me until GomSACA came to our school. Their youth program educated me and empowered me to speak to my peers. I now lead a youth HIV awareness group reaching over 2,000 young people.",
   },
   {
     id: 4,
@@ -469,7 +469,7 @@ export const testimonials = [
     role: "PMTCT Beneficiary, Kaltungo LGA",
     image: "/MEDICAL OUTREACH & HIV_AIDS AWARENESS, SOUTH… (1).jpeg",
     quote:
-      "Thanks to GOMSACA's prevention of mother-to-child transmission program, I gave birth to an HIV-negative baby. The counseling, medication, and support I received throughout my pregnancy was exceptional. My child is healthy and thriving.",
+      "Thanks to GomSACA's prevention of mother-to-child transmission program, I gave birth to an HIV-negative baby. The counseling, medication, and support I received throughout my pregnancy was exceptional. My child is healthy and thriving.",
   },
 ]
 
@@ -486,7 +486,7 @@ export const successStories = [
     id: 2,
     name: "A Community Transformed — Dukku LGA",
     summary:
-      "When GOMSACA began intensive community engagement in Dukku LGA, HIV testing rates were below 15%. Through sustained awareness campaigns and mobile testing, testing rates have risen to over 65%.",
+      "When GomSACA began intensive community engagement in Dukku LGA, HIV testing rates were below 15%. Through sustained awareness campaigns and mobile testing, testing rates have risen to over 65%.",
     image: "/999165867338083734.jpeg",
     outcome: "HIV testing increased by 400%, stigma reduced by 60%",
   },
@@ -494,7 +494,7 @@ export const successStories = [
     id: 3,
     name: "Giving Hope to the Next Generation",
     summary:
-      "Through GOMSACA's PMTCT program, over 5,000 HIV-positive mothers have received comprehensive care, ensuring their children are born HIV-free and healthy.",
+      "Through GomSACA's PMTCT program, over 5,000 HIV-positive mothers have received comprehensive care, ensuring their children are born HIV-free and healthy.",
     image: "/A doctor is checking a patient_.jpeg",
     outcome: "99% of babies born to HIV-positive mothers are HIV-free",
   },
@@ -503,10 +503,10 @@ export const successStories = [
 export const publications = [
   {
     id: 1,
-    title: "GOMSACA Annual Report 2023",
+    title: "GomSACA Annual Report 2023",
     type: "Annual Report",
     date: "2024-01-15",
-    description: "Comprehensive overview of GOMSACA's programs, achievements, and financial statements for the 2023 fiscal year.",
+    description: "Comprehensive overview of GomSACA's programs, achievements, and financial statements for the 2023 fiscal year.",
     fileSize: "4.2 MB",
     format: "PDF",
     category: "Annual Reports",
@@ -543,10 +543,10 @@ export const publications = [
   },
   {
     id: 5,
-    title: "GOMSACA Program Impact Evaluation 2023",
+    title: "GomSACA Program Impact Evaluation 2023",
     type: "Research Publication",
     date: "2024-01-30",
-    description: "Independent evaluation of GOMSACA's programmatic impact on HIV/AIDS outcomes in Gombe State.",
+    description: "Independent evaluation of GomSACA's programmatic impact on HIV/AIDS outcomes in Gombe State.",
     fileSize: "6.3 MB",
     format: "PDF",
     category: "Research Publications",

@@ -3,14 +3,14 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "GOMSACA — Gombe State Agency for the Control of AIDS",
-    template: "%s | GOMSACA — Gombe State Agency for the Control of AIDS",
+    default: "GomSACA — Gombe State Agency for the Control of AIDS",
+    template: "%s | GomSACA — Gombe State Agency for the Control of AIDS",
   },
   metadataBase: new URL("https://gomsaca.org.ng"),
   description:
     "Gombe State Agency for the Control of Aids is an agency saddled with the responsibility of identifying and controlling the spread of HIV.",
   keywords: [
-    "GOMSACA",
+    "GomSACA",
     "Gombe State",
     "HIV/AIDS",
     "AIDS control",
@@ -22,17 +22,17 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Gombe State Agency for the Control of AIDS" }],
   openGraph: {
-    title: "GOMSACA — Gombe State Agency for the Control of AIDS",
+    title: "GomSACA — Gombe State Agency for the Control of AIDS",
     description:
       "Gombe State Agency for the Control of Aids is an agency saddled with the responsibility of identifying and controlling the spread of HIV.",
     type: "website",
     locale: "en_NG",
-    siteName: "GOMSACA",
+    siteName: "GomSACA",
     url: "https://gomsaca.org.ng",
   },
   twitter: {
     card: "summary_large_image",
-    title: "GOMSACA — Gombe State Agency for the Control of AIDS",
+    title: "GomSACA — Gombe State Agency for the Control of AIDS",
     description:
       "Gombe State Agency for the Control of Aids is an agency saddled with the responsibility of identifying and controlling the spread of HIV.",
   },

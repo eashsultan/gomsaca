@@ -15,7 +15,7 @@ const navLinks = [
     children: [
       { label: "About the Agency", href: "/about", description: "Our mission, vision and mandate" },
       { label: "Core Functions", href: "/functions", description: "Directorates & key responsibilities" },
-      { label: "Powers & Duties", href: "/powers", description: "Statutory functions of GOMSACA" },
+      { label: "Powers & Duties", href: "/powers", description: "Statutory functions of GomSACA" },
       { label: "Ribbon Leadership", href: "/leadership", description: "Meet our executive team" },
       { label: "Organizational Structure", href: "/organizational-structure", description: "How we are organised" },
     ],
@@ -142,13 +142,13 @@ export function Header() {
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-[4.5rem]">
-            <Link href="/" className="flex items-center gap-3 group" aria-label="GOMSACA Home">
+            <Link href="/" className="flex items-center gap-3 group" aria-label="GomSACA Home">
               <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[var(--primary)] to-[var(--primary-lighter)] flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:scale-105 transition-all duration-300 relative overflow-hidden">
                 <Heart className="w-5 h-5 text-white" />
                 <span className="absolute -right-2 -top-2 w-5 h-5 bg-[var(--accent)] rounded-full opacity-0 group-hover:opacity-90 transition-opacity" />
               </div>
               <div className="leading-tight">
-                <span className="block font-extrabold text-xl text-[var(--dark-text)] tracking-tight">GOMSACA</span>
+                <span className="block font-extrabold text-xl text-[var(--dark-text)] tracking-tight">GomSACA</span>
                 <span className="hidden sm:block text-[10px] uppercase tracking-[0.18em] text-[var(--muted)]">Gombe State AIDS Agency</span>
               </div>
             </Link>

@@ -98,7 +98,7 @@ export function Footer() {
                 <Heart className="w-6 h-6 text-white" />
                 <span className="absolute -right-1.5 -top-1.5 w-5 h-5 bg-[var(--accent)] rounded-full" />
               </div>
-              <span className="font-extrabold text-2xl tracking-tight">GOMSACA</span>
+              <span className="font-extrabold text-2xl tracking-tight">GomSACA</span>
             </Link>
             <p className="text-white/55 leading-relaxed mb-6 text-sm">
               The Gombe State Agency for the Control of AIDS coordinates a unified, multi-sectoral response to HIV/AIDS — leading prevention, treatment, care, advocacy and partnerships across all 11 LGAs.
@@ -163,7 +163,7 @@ export function Footer() {
               Stay Updated
             </h4>
             <p className="text-white/50 text-sm mb-4 leading-relaxed">
-              Get the latest on HIV prevention and GOMSACA updates in your inbox.
+              Get the latest on HIV prevention and GomSACA updates in your inbox.
             </p>
             {subscribed ? (
               <div className="flex items-start gap-3 rounded-2xl bg-[var(--warm)]/15 border border-[var(--warm)]/30 p-4">
@@ -206,7 +206,7 @@ export function Footer() {
       <div className="border-t border-white/10 mt-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/35 text-sm">
-            &copy; {new Date().getFullYear()} Gombe State Agency for the Control of AIDS (GOMSACA).
+            &copy; {new Date().getFullYear()} Gombe State Agency for the Control of AIDS (GomSACA).
           </p>
           <div className="flex items-center gap-5">
             <a href="#" className="text-white/35 hover:text-white text-sm transition-colors">Privacy Policy</a>

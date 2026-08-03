@@ -10,7 +10,7 @@ export default function PowersPage() {
       <main className="pb-16 bg-gray-50/50 min-h-screen">
         <PageHeader
           label="Powers"
-          title="Powers of GOMSACA"
+          title="Powers of GomSACA"
           description="The statutory powers granted to the agency to effectively manage, regulate, and coordinate the state's response to HIV/AIDS."
         />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">

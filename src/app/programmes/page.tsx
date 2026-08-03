@@ -40,7 +40,7 @@ export default function ProgrammesPage() {
         <PageHeader
           label="Programmes"
           title={<>Our <span className="text-gradient">Programmes</span></>}
-          description="Strategic, evidence-based interventions led by GOMSACA to combat HIV/AIDS and support affected communities across Gombe State."
+          description="Strategic, evidence-based interventions led by GomSACA to combat HIV/AIDS and support affected communities across Gombe State."
         />
 
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">

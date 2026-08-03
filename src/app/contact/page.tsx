@@ -94,7 +94,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-semibold text-red-900 mb-1">Emergency Hotline</h3>
                   <p className="text-red-700 text-sm font-medium">Available 24/7</p>
-                  <p className="text-red-800 font-bold mt-1 text-lg">112 / 0800 GOMSACA</p>
+                  <p className="text-red-800 font-bold mt-1 text-lg">112 / 0800 GomSACA</p>
                 </div>
               </motion.div>
             </div>

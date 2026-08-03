@@ -11,7 +11,7 @@ export default function FunctionsPage() {
         <PageHeader
           label="Functions"
           title="Functions of the Agency"
-          description="GOMSACA is mandated to coordinate and implement comprehensive strategies to combat HIV/AIDS in Gombe State."
+          description="GomSACA is mandated to coordinate and implement comprehensive strategies to combat HIV/AIDS in Gombe State."
         />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
           <AgencyFunctions />

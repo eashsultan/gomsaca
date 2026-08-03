@@ -96,7 +96,7 @@ export function CoreFunctions() {
             transition={{ duration: 0.5, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="text-lg lg:text-xl text-[var(--body-text)] leading-relaxed"
           >
-            GOMSACA leads the coordinated response through five primary directorates, ensuring comprehensive action across all fronts.
+            GomSACA leads the coordinated response through five primary directorates, ensuring comprehensive action across all fronts.
           </motion.p>
         </motion.div>
 

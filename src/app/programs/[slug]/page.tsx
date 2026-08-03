@@ -135,7 +135,7 @@ export default function ProgramPage() {
               >
                 <h3 className="text-xl font-bold mb-3">Get involved</h3>
                 <p className="text-white/85 text-sm leading-relaxed mb-6">
-                  Learn more about how GOMSACA is driving HIV prevention and control across Gombe State.
+                  Learn more about how GomSACA is driving HIV prevention and control across Gombe State.
                 </p>
                 <Link
                   href="/programmes"

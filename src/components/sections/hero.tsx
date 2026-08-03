@@ -239,7 +239,7 @@ export function Hero() {
               transition={{ duration: 0.7, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
               className="text-base lg:text-lg leading-relaxed mb-8 max-w-xl"
             >
-              <span className="text-[var(--body-text)]">GOMSACA is the state agency responsible for coordinating HIV/AIDS prevention, partnerships, community interventions, monitoring, advocacy, and support programmes.</span>
+              <span className="text-[var(--body-text)]">GomSACA is the state agency responsible for coordinating HIV/AIDS prevention, partnerships, community interventions, monitoring, advocacy, and support programmes.</span>
             </motion.p>
 
             <motion.div

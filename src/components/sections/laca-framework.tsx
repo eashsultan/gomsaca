@@ -12,7 +12,7 @@ export function LacaFramework() {
             Local Action Committee on AIDS (LACA)
           </h1>
           <p className="text-lg text-[var(--body-text)]">
-            LACA serves as the critical community-level implementation arm of GOMSACA, translating state-level policies into grassroots action.
+            LACA serves as the critical community-level implementation arm of GomSACA, translating state-level policies into grassroots action.
           </p>
         </div>
 
@@ -29,7 +29,7 @@ export function LacaFramework() {
               icon: Target,
             },
             {
-              title: "Role within GOMSACA",
+              title: "Role within GomSACA",
               desc: "Acts as the operational linkage between state-level strategies and local implementation.",
               icon: GitMerge,
             },

@@ -9,9 +9,9 @@ import { TiltCard } from "@/components/ui/tilt-card"
 import { FloatingParticles } from "@/components/ui/floating-elements"
 
 const awardImages = [
-  { src: "/Award 1.jpg", alt: "GOMSACA Impact Award 1", label: "Excellence in Service" },
-  { src: "/Award 2.jpg", alt: "GOMSACA Impact Award 2", label: "Outstanding Contribution" },
-  { src: "/Award 3.jpg", alt: "GOMSACA Impact Award 3", label: "Impact Recognition" },
+  { src: "/Award 1.jpg", alt: "GomSACA Impact Award 1", label: "Excellence in Service" },
+  { src: "/Award 2.jpg", alt: "GomSACA Impact Award 2", label: "Outstanding Contribution" },
+  { src: "/Award 3.jpg", alt: "GomSACA Impact Award 3", label: "Impact Recognition" },
 ]
 
 export function Awards() {
@@ -137,7 +137,7 @@ export function Awards() {
                     </span>
                   </h3>
                   <p className="text-white/70 leading-relaxed mb-8">
-                    GOMSACA was honored with the prestigious Impact Award by the
+                    GomSACA was honored with the prestigious Impact Award by the
                     Center for Integrated Health Programs (CIHP) in recognition of
                     our outstanding contributions to HIV/AIDS prevention, treatment,
                     and care across Gombe State.

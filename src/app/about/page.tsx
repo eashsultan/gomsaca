@@ -38,8 +38,8 @@ export default function AboutPage() {
         {/* Hero Section */}
         <PageHeader
           label="About Us"
-          title={<>About <span className="text-gradient">GOMSACA</span></>}
-          description="The Gombe State Agency for the Control of AIDS (GOMSACA) is the principal government body coordinating the state's multi-sectoral response to the HIV/AIDS epidemic. We work tirelessly to ensure a healthy, stigma-free society."
+          title={<>About <span className="text-gradient">GomSACA</span></>}
+          description="The Gombe State Agency for the Control of AIDS (GomSACA) is the principal government body coordinating the state's multi-sectoral response to the HIV/AIDS epidemic. We work tirelessly to ensure a healthy, stigma-free society."
         />
         <section className="px-6 lg:px-8 max-w-7xl mx-auto mt-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

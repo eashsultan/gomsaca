@@ -356,7 +356,7 @@ export function About() {
           >
             <div className="inline-flex items-center gap-3 px-8 py-5 rounded-2xl bg-gradient-to-r from-[var(--primary-bg)] to-[var(--primary)]/10 border border-[var(--primary)]/20 text-[var(--primary)] font-semibold shadow-lg shadow-[var(--primary)]/5">
               <Award className="w-6 h-6" />
-              <span>Impact Award to GOMSACA by CIHP.</span>
+              <span>Impact Award to GomSACA by CIHP.</span>
               <a href="#" className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[var(--primary)] text-white text-sm font-bold hover:bg-[var(--primary-dark)] transition-colors">
                 View Award
                 <CheckCircle className="w-3.5 h-3.5" />

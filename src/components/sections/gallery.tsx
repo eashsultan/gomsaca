@@ -84,7 +84,7 @@ export function Gallery() {
             className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full bg-gradient-to-r from-[var(--primary)] to-[var(--primary-light)] text-white text-xs font-bold uppercase tracking-[0.15em] mb-6 shadow-lg shadow-[var(--primary)]/20"
           >
             <Sparkles className="w-3.5 h-3.5" />
-            GOMSACA Activities
+            GomSACA Activities
           </motion.span>
           <motion.h2
             initial={{ opacity: 0, y: 16 }}
@@ -93,7 +93,7 @@ export function Gallery() {
             transition={{ duration: 0.5, delay: 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.05] tracking-tight"
           >
-            <span className="text-[var(--primary)]">All GOMSACA</span>{" "}
+            <span className="text-[var(--primary)]">All GomSACA</span>{" "}
             <span className="bg-gradient-to-r from-[var(--primary)] to-[var(--warm)] bg-clip-text text-transparent">
               Activities
             </span>

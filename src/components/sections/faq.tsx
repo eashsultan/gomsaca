@@ -7,8 +7,8 @@ import { SectionHeader } from "@/components/ui/section-header"
 
 const faqs = [
   {
-    q: "What services does GOMSACA provide?",
-    a: "GOMSACA coordinates comprehensive HIV/AIDS services including prevention, testing, treatment, care, community outreach, youth engagement, and public awareness campaigns across all 11 LGAs of Gombe State.",
+    q: "What services does GomSACA provide?",
+    a: "GomSACA coordinates comprehensive HIV/AIDS services including prevention, testing, treatment, care, community outreach, youth engagement, and public awareness campaigns across all 11 LGAs of Gombe State.",
   },
   {
     q: "How can I get tested for HIV?",
@@ -16,19 +16,19 @@ const faqs = [
   },
   {
     q: "Is HIV treatment free?",
-    a: "Yes, antiretroviral therapy (ART) is provided free of charge at all GOMSACA-supported health facilities. We also provide adherence counseling and viral load monitoring.",
+    a: "Yes, antiretroviral therapy (ART) is provided free of charge at all GomSACA-supported health facilities. We also provide adherence counseling and viral load monitoring.",
   },
   {
     q: "How can I prevent mother-to-child transmission?",
-    a: "GOMSACA offers comprehensive PMTCT services including antenatal care, HIV testing during pregnancy, prophylactic treatment, and safe delivery practices to ensure babies are born HIV-free.",
+    a: "GomSACA offers comprehensive PMTCT services including antenatal care, HIV testing during pregnancy, prophylactic treatment, and safe delivery practices to ensure babies are born HIV-free.",
   },
   {
     q: "What should I do if I experience stigma or discrimination?",
-    a: "GOMSACA has a dedicated team for addressing stigma and discrimination. You can report any incidents through our hotline or visit any of our facilities for support and counseling.",
+    a: "GomSACA has a dedicated team for addressing stigma and discrimination. You can report any incidents through our hotline or visit any of our facilities for support and counseling.",
   },
   {
     q: "How can my community get involved?",
-    a: "Communities can partner with GOMSACA through our community outreach programs, peer education initiatives, and awareness campaigns. Contact us to learn about volunteer opportunities.",
+    a: "Communities can partner with GomSACA through our community outreach programs, peer education initiatives, and awareness campaigns. Contact us to learn about volunteer opportunities.",
   },
 ]
 

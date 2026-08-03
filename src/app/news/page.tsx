@@ -11,7 +11,7 @@ import { PageHeader } from "@/components/ui/page-header"
 const categories = ["All News", "Press Releases", "Health Updates", "Community Events", "Announcements"]
 
 const featuredArticle = {
-  title: "GOMSACA Launches New Statewide Health Initiative for 2026",
+  title: "GomSACA Launches New Statewide Health Initiative for 2026",
   date: "July 28, 2026",
   category: "Press Releases",
   excerpt: "In a groundbreaking move to improve public health outcomes, the Gombe State Agency for Community Action has unveiled a comprehensive new program targeting grassroots health awareness and intervention.",
@@ -37,7 +37,7 @@ const newsArticles = [
   },
   {
     id: 3,
-    title: "GOMSACA Partners with International Health Organizations",
+    title: "GomSACA Partners with International Health Organizations",
     date: "June 20, 2026",
     category: "Announcements",
     excerpt: "A new strategic partnership aims to bring advanced medical resources and training programs to healthcare workers in Gombe State.",

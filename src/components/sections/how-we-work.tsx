@@ -5,7 +5,7 @@ import Image from "next/image"
 import { SectionHeader } from "@/components/ui/section-header"
 
 const steps = [
-  { number: "01", title: "Reach Out", image: "/MEDICAL OUTREACH & HIV_AIDS AWARENESS, SOUTH… (1).jpeg", desc: "Contact GOMSACA through our hotline or visit any of our health facilities." },
+  { number: "01", title: "Reach Out", image: "/MEDICAL OUTREACH & HIV_AIDS AWARENESS, SOUTH… (1).jpeg", desc: "Contact GomSACA through our hotline or visit any of our health facilities." },
   { number: "02", title: "Get Tested", image: "/999165867338083734.jpeg", desc: "Access free confidential HIV testing and counseling services." },
   { number: "03", title: "Access Care", image: "/A doctor is checking a patient_.jpeg", desc: "Connect with treatment, prevention, and support services tailored to you." },
   { number: "04", title: "Stay Healthy", image: "/8444318045568594.jpeg", desc: "Ongoing support, adherence counseling, and community follow-up." },
