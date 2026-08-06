@@ -31,6 +31,7 @@ const navLinks = [
       { label: "Gallery", href: "/gallery", description: "Photos & events" },
     ],
   },
+  { label: "Facilities Map", href: "/facilities-map" },
   { label: "News", href: "/news" },
   { label: "Partners", href: "/partners" },
   { label: "Contact", href: "/contact" },
@@ -157,7 +158,7 @@ export function Header() {
 
             <div className="hidden lg:flex items-center gap-3">
               <Link
-                      href="/contact"
+                      href="/facilities-map"
                       className="flex items-center gap-2 text-sm text-[var(--body-text)] hover:text-[var(--primary)] transition-colors"
                     >
                       <ShieldCheck className="w-4.5 h-4.5 text-[var(--primary)]" />

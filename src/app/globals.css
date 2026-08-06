@@ -204,3 +204,8 @@ h1, h2, h3, h4, h5, h6 {
   background-size: 200% 100%;
   animation: shimmer 2s ease-in-out infinite;
 }
+
+/* Hide Leaflet Routing Machine default panel overlay from map canvas */
+.leaflet-routing-container {
+  display: none !important;
+}

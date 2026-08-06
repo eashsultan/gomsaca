@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 import { MapPin, Phone, Mail, Clock, ShieldAlert, Send } from "lucide-react"
 import { siteConfig } from "@/lib/data"
 import { PageHeader } from "@/components/ui/page-header"
+import Link from "next/link"
 
 export default function ContactPage() {
   return (
@@ -138,14 +139,25 @@ export default function ContactPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="w-full h-80 bg-gray-200 rounded-3xl overflow-hidden relative border border-[var(--border)] shadow-sm"
+                className="w-full p-8 bg-gradient-to-br from-[#0B3C6D] to-[#061F3A] rounded-3xl overflow-hidden relative border border-[var(--border)] shadow-md text-white flex flex-col justify-between min-h-[280px]"
               >
-                <div className="absolute inset-0 flex items-center justify-center bg-[var(--gray-light)]">
-                  <div className="text-center">
-                    <MapPin className="w-12 h-12 text-gray-400 mx-auto mb-3" />
-                    <p className="text-gray-500 font-medium">Interactive Map Placeholder</p>
-                    <p className="text-sm text-gray-400 mt-1">Gombe State Secretariat Complex</p>
+                <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl pointer-events-none" />
+                <div>
+                  <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mb-4">
+                    <MapPin className="w-6 h-6 text-rose-400" />
                   </div>
+                  <h3 className="text-xl font-bold mb-2">Interactive HIV Facilities Map</h3>
+                  <p className="text-white/80 text-sm leading-relaxed max-w-md">
+                    Looking for treatment or testing? Access our interactive map to search, filter by LGA, and find verified ART centres closest to you.
+                  </p>
+                </div>
+                <div className="mt-6">
+                  <Link 
+                    href="/facilities-map" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#0B3C6D] font-bold rounded-xl hover:bg-gray-100 transition-colors text-sm"
+                  >
+                    View Interactive Map
+                  </Link>
                 </div>
               </motion.div>
             </div>

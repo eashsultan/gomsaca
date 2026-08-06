@@ -28,7 +28,7 @@ const actions: { icon: LucideIcon; title: string; description: string; href: str
     icon: MapPin,
     title: "Find Health Facility",
     description: "Locate testing and treatment centres in your LGA.",
-    href: "/contact",
+    href: "/facilities-map",
     accent: "from-[#0B3C6D] to-[#2563EB]",
     chip: "#2563EB",
   },
